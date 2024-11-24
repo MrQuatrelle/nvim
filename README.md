@@ -5,9 +5,9 @@ My personal NeoVim configuration.
 Bear in mind that this is a **personal** config for NeoVim. It has some opinionated settings that I know many *purists* don't approve, like using jkl; instead of hjkl. I also remapped many *standard* keybinds most people use, especially the LSP ones.
 
 It also has some more elaborated configs for certain languages:
-    - `rustaceanvim`, a plugin that works together with the `rust-analyzer` (rust's official language server) to extend its functionality
-    - `jdtls`, same as above but for Java
-    - `hyprlang` is just a normal language server for [Hyprland](https://hyprland.org/)'s config language that is on an early phase and still needs to be manually attached to the buffer.
+- `rustaceanvim`, a plugin that works together with the `rust-analyzer` (rust's official language server) to extend its functionality
+- `jdtls`, same as above but for Java
+- `hyprlang` is just a normal language server for [Hyprland](https://hyprland.org/)'s config language that is on an early phase and still needs to be manually attached to the buffer.
 
 ### Plugins I use
 
