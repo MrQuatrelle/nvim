@@ -39,7 +39,7 @@ It also has some more elaborated configs for certain languages:
 
 - [fd/fdfind](https://github.com/sharkdp/fd) and [ripgrep](https://github.com/BurntSushi/ripgrep) for [Telescope](https://github.com/nvim-telescope/telescope.nvim)
     - About *fd/fdfind*: the package and the name of the binary change from OS to OS and from distro to distro, e.g. on Arch Linux both are named *fd*, on Ubuntu Linux they are both called *fdfind* and on MacOS/Brew they are called *fdfind* and *fd*, respectively. Change Telescope's config ([here](after/plugin/telescope.lua#L8)) accordingly.
-    - ripgrep is used for Telescope's *grep_string()* builtin extension.
+    - *ripgrep* is used for Telescope's `grep_string()` builtin extension.
 
 ## Installation
 
