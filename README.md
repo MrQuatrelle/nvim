@@ -47,7 +47,9 @@ It also has some more elaborated configs for certain languages:
     - This project was abandoned recently, so I suggest using something else, like [Lazy.nvim](https://github.com/folke/lazy.nvim). Packer just works for now and I'm not changing my config until I have problems with it :P (even though I know I should)
 
 2. Clone this repo into *~/.config/nvim*:
-    > git clone https://github.com/mrquatrelle/nvim.git ~/.config/nvim
+```sh
+    git clone https://github.com/mrquatrelle/nvim.git ~/.config/nvim
+```
 
 3. Launch neovim: ```nvim```
     - *A lot* of errors will appear on your screen. This is because the config's plugins aren't installed yet. That will be done
