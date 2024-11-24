@@ -93,17 +93,11 @@ return require("packer").startup(function(use)
         "mistricky/codesnap.nvim",
         run = "make"
     }
-
     use {
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
     }
-
     use {
         "donRaphaco/neotex",
-    }
-
-    use {
-        "https://github.com/paretje/nvim-man",
     }
 end)
