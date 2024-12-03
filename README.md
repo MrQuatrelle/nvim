@@ -69,9 +69,11 @@ Plus, I can guarantee you that I will mod it from time to time... Try other stuf
 ## Bugs
 
 1. In some OS/distro combinations, an error appears on method `.preset()`, of lsp-zero. Idk what it is, and the config still works anyways... If it annoys you, RTFM.
+2. Lualine refresh needs to be forced (not detecting events?)
 
 ## Next steps
 
+4. Fix lualine (Bug 2)
 1. Add [which-key.nvim](https://github.com/folke/which-key.nvim) to the config. Not very useful but definitely very cool.
 2. Add [compile-mode.nvim](https://github.com/ej-shafran/compile-mode.nvim) to the config.
 3. Change plugin manager from Packer to [Lazy.nvim](https://github.com/folke/lazy.nvim), or maybe some fork of Packer that is still maintained
