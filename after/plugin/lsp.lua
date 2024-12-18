@@ -18,9 +18,7 @@ lsp_zero.on_attach(function(_, bufnr)
     keymap.set("n", "<leader>r", vlsp.buf.rename, bufopts)      -- r -> rename
     keymap.set("n", "<leader>a", vlsp.buf.code_action, bufopts) -- a -> action
     keymap.set("n", "<leader>u", vlsp.buf.references, bufopts)  -- u -> usages
-    keymap.set("n", "<leader>h", function()
-        vim.diagnostic.open_float()
-    end)
+    keymap.set("n", "<leader>h", vim.diagnostic.open_float, bufopts)
 
     keymap.set("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, bufopts)
     keymap.set("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, bufopts)
