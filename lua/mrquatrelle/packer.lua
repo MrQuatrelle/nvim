@@ -13,7 +13,10 @@ return require("packer").startup(function(use)
     }
     use {
         "nvim-telescope/telescope-file-browser.nvim",
-        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+        requires = {
+            "nvim-telescope/telescope.nvim",
+            "nvim-lua/plenary.nvim",
+        }
     }
     use {
         "nvim-treesitter/nvim-treesitter",
@@ -50,7 +53,13 @@ return require("packer").startup(function(use)
         }
     }
     use {
+        "folke/trouble.nvim",
+    }
+    use {
         "mrcjkb/rustaceanvim",
+    }
+    use {
+        "mfussenegger/nvim-jdtls",
     }
     use {
         "nvim-lualine/lualine.nvim",
@@ -79,9 +88,6 @@ return require("packer").startup(function(use)
     }
     use {
         "Pocco81/auto-save.nvim",
-    }
-    use {
-        "mfussenegger/nvim-jdtls",
     }
     use {
         "windwp/nvim-autopairs",
