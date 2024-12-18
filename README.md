@@ -5,7 +5,7 @@ My personal NeoVim configuration.
 Bear in mind that this is a **personal** config for NeoVim. It has some opinionated settings that I know many *purists* don't approve, like using jkl; instead of hjkl. I also remapped many *standard* keybinds most people use, especially the LSP ones.
 
 It also has some more elaborated configs for certain languages:
-- `rustaceanvim`, a plugin that works together with the `rust-analyzer` (rust's official language server) to extend its functionality
+- `rustaceanvim`, a plugin that works together with `rust-analyzer` (rust's official language server) to extend its functionality
 - `jdtls`, same as above but for Java
 - `hyprlang` is just a normal language server for [Hyprland](https://hyprland.org/)'s config language that is on an early phase and still needs to be manually attached to the buffer.
 
@@ -51,20 +51,20 @@ It also has some more elaborated configs for certain languages:
     git clone https://github.com/mrquatrelle/nvim.git ~/.config/nvim
 ```
 
-3. Launch neovim: ```nvim```
+3. Launch NeoVim: ```nvim```
     - *A lot* of errors will appear on your screen. This is because the config's plugins aren't installed yet. That will be done
     on the next step. Just "spam" `q` until they all disappear
 
 4. Run this command to install all the plugins: ```:PackerSync```
     - This will take a little while to do its thing, let it finish.
 
-5. Quit neovim. Once you relaunch it, all should be working, *hopefully...*
+5. Quit NeoVim. Once you relaunch it, all should be working, *hopefully...*
 
 ## Final tips for newbies
 
-Repeat after me one last time: *This is a **personal** config!*. lol. You should fork it and modify it to your own taste or create your own and check mine out to understand how some simple stuff is set up (my config is relatively very simple).
+Repeat after me one last time: *This is a **personal** config!*. LOL. You should fork it and modify it to your own taste or create your own and check mine out to understand how some simple stuff is set up (my config is relatively very simple).
 
-Plus, I can guarantee you that I will mod it from time to time... Try other stuff out, etc. Just so you don't loose its current state, if you like it, fork it and use your fork (e.g. on step 2 of the installation).
+Plus, I can guarantee you that I will mod it from time to time... Try other stuff out, etc. Just so you don't lose its current state, if you like it, fork it and use your fork (e.g. on step 2 of the installation).
 
 ## Bugs
 
