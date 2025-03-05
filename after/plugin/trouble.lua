@@ -6,7 +6,7 @@ trouble.setup({
 
     modes = {
         diagnostics = {
-            focus = true,
+            focus = false,
             groups = {
                 { "filename", format = "{file_icon} {basename:Title} {count}" },
             },
