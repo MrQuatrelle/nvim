@@ -9,4 +9,4 @@ keymap.set({ "n", "v" }, "<C-l>", "10kzz")
 
 keymap.set({"n"}, "<M-n>", ":Ex<CR>")
 
-keymap.set({"i"}, "<C-BS>", "<C-o>db<C-o>x")
+keymap.set({"i"}, "<C-BS>", "<C-w>")
