@@ -27,8 +27,13 @@ local path_to_jdtls = path_to_mason_packages .. "/jdtls"
 local path_to_config = path_to_jdtls .. "/config_linux"
 local lombok_path = path_to_jdtls .. "/lombok.jar"
 
--- 💀
-local path_to_jar = path_to_jdtls .. "/plugins/org.eclipse.equinox.launcher_1.6.900.v20240613-2009.jar"
+local pattern = path_to_jdtls .. "/plugins/org.eclipse.equinox.launcher_*.jar"
+local valid_paths = vim.fn.glob(pattern, true, true)
+
+local path_to_jar
+for _, file in ipairs(valid_paths) do
+    path_to_jar = file
+end
 -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                       ^^^^^^^^^^^^^^
 
 local bundles = {
