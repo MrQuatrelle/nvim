@@ -3,6 +3,7 @@ require("smartcolumn").setup({
     disabled_filetypes = {},
     custom_colorcolumn = {
         c = "80",
+        h = "80",
     },
     scope = "file",
 })

@@ -18,7 +18,8 @@ telescope.setup({
             i = {
                 ["<esc>"] = actions.close,
             },
-        }
+        },
+        layout_strategy = "vertical"
     }
 })
 

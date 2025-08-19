@@ -41,12 +41,14 @@ lsp_zero.setup({
 -- MASON CONFIG
 require("mason").setup({})
 require("mason-lspconfig").setup({
+    automatic_enable = {
+        exclude = {
+            "rust_analyzer",
+            "jdtls"
+        }
+    },
     ensure_installed = {},
     handlers = {
         lsp_zero.default_setup,
-
-        -- servers to ignore
-        jdtls = function() end,
-        rust_analyzer = function() end,
     },
 })
