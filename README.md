@@ -2,7 +2,7 @@ My personal NeoVim configuration.
 
 ## About the config
 
-Bear in mind that this is a **personal** config for NeoVim. It has some opinionated settings that I know many *purists* don't approve, like using jkl; instead of hjkl. I also remapped many *standard* keybinds most people use, especially the LSP ones.
+Bear in mind that this is a **personal** config for NeoVim. It has some opinionated settings that I know many *purists* don't approve. I also remapped many *standard* keybinds most people use, especially the LSP ones, to others that made more sense to me.
 
 It also has some more elaborated configs for certain languages:
 - `rustaceanvim`, a plugin that works together with `rust-analyzer` (rust's official language server) to extend its functionality
@@ -62,18 +62,26 @@ It also has some more elaborated configs for certain languages:
 
 ## Final tips for newbies
 
-Repeat after me one last time: *This is a **personal** config!*. LOL. You should fork it and modify it to your own taste or create your own and check mine out to understand how some simple stuff is set up (my config is relatively very simple).
+Repeat after me one last time: *This is a **personal** config!*. LOL. You should create your own config and just check mine out to understand how I do some simple stuff and setups (my config is relatively very simple).
+
+If you just want to check NeoVim out, check out [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim). If you *really* want to base your config on mine, you should fork it and modify it to your own taste. Don't just clone it. 
 
 Plus, I can guarantee you that I will mod it from time to time... Try other stuff out, etc. Just so you don't lose its current state, if you like it, fork it and use your fork (e.g. on step 2 of the installation).
 
 ## Bugs
 
-1. In some OS/distro combinations, an error appears on method `.preset()`, of lsp-zero. Idk what it is, and the config still works anyways... If it annoys you, RTFM.
-2. Lualine refresh needs to be forced (not detecting events?)
+1. In some OS/distros, the installation is not as smooth as I make it sound on [Installation](Installation). I will eventually investigate it.
+2. Lualine refresh needs to be forced (not detecting events?). I will eventually investigate it too.
+3. In some OS/distros, an error appears on method `.preset()`, of lsp-zero. I don't know what makes that happen, and the config still works anyway... If it annoys you, RTFM :)
 
 ## Next steps
 
-4. Fix lualine (Bug 2)
-1. Add [which-key.nvim](https://github.com/folke/which-key.nvim) to the config. Not very useful but definitely very cool.
-2. Add [compile-mode.nvim](https://github.com/ej-shafran/compile-mode.nvim) to the config.
-3. Change plugin manager from Packer to [Lazy.nvim](https://github.com/folke/lazy.nvim), or maybe some fork of Packer that is still maintained
+1. Make installation smooth again (Bug 2)
+2. Fix Lualine (Bug 3)
+3. Add [which-key.nvim](https://github.com/folke/which-key.nvim) to the config. Not very useful but definitely very cool.
+4. Add [compile-mode.nvim](https://github.com/ej-shafran/compile-mode.nvim) to the config.
+5. Change plugin manager from Packer to [Lazy.nvim](https://github.com/folke/lazy.nvim), or maybe some fork of Packer that is still maintained
+
+## Changes
+
+- 19/Aug/2025: I changed from `jkl;` back to `hjkl`. Let's see how it goes... Might change back, dunno.
