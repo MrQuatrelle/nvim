@@ -43,22 +43,16 @@ It also has some more elaborated configs for certain languages:
 
 ## Installation
 
-1. Install [packer.nvim](https://github.com/wbthomason/packer.nvim), for plugin management, via the `git clone` command on the package's README.
-    - This project was abandoned recently, so I suggest using something else, like [Lazy.nvim](https://github.com/folke/lazy.nvim). Packer just works for now and I'm not changing my config until I have problems with it :P (even though I know I should)
-
-2. Clone this repo into *~/.config/nvim*:
+1. Clone this repo into *~/.config/nvim*:
 ```sh
     git clone https://github.com/mrquatrelle/nvim.git ~/.config/nvim
 ```
 
-3. Launch NeoVim: ```nvim```
+2. Launch NeoVim: ```nvim```
     - *A lot* of errors will appear on your screen. This is because the config's plugins aren't installed yet. That will be done
     on the next step. Just "spam" `q` until they all disappear
 
-4. Run this command to install all the plugins: ```:PackerSync```
-    - This will take a little while to do its thing, let it finish.
-
-5. Quit NeoVim. Once you relaunch it, all should be working, *hopefully...*
+3. Quit NeoVim. Once you relaunch it, all should be working, *hopefully...*
 
 ## Final tips for newbies
 
@@ -70,18 +64,14 @@ Plus, I can guarantee you that I will mod it from time to time... Try other stuf
 
 ## Bugs
 
-1. In some OS/distros, the installation is not as smooth as I make it sound on [Installation](Installation). I will eventually investigate it.
-2. Lualine refresh needs to be forced (not detecting events?). I will eventually investigate it too.
-3. In some OS/distros, an error appears on method `.preset()`, of lsp-zero. I don't know what makes that happen, and the config still works anyway... If it annoys you, RTFM :)
+1. In some OS/distros, an error appears on method `.preset()`, of lsp-zero. I don't know what makes that happen, and the config still works anyway... If it annoys you, RTFM :)
 
 ## Next steps
 
-1. Make installation smooth again (Bug 2)
-2. Fix Lualine (Bug 3)
-3. Add [which-key.nvim](https://github.com/folke/which-key.nvim) to the config. Not very useful but definitely very cool.
-4. Add [compile-mode.nvim](https://github.com/ej-shafran/compile-mode.nvim) to the config.
-5. Change plugin manager from Packer to [Lazy.nvim](https://github.com/folke/lazy.nvim), or maybe some fork of Packer that is still maintained
+1. Add [which-key.nvim](https://github.com/folke/which-key.nvim) to the config. Not very useful but definitely very cool.
+2. Add [compile-mode.nvim](https://github.com/ej-shafran/compile-mode.nvim) to the config.
 
 ## Changes
 
 - 19/Aug/2025: I changed from `jkl;` back to `hjkl`. Let's see how it goes... Might change back, dunno.
+- 12/Out/2025: I finally changed from Packer to Lazy.nvim.
