@@ -4,11 +4,11 @@ local jdtls_setup = require("jdtls.setup")
 local home = os.getenv("HOME")
 
 local root_markers = {
+    "gradlew",
+    "build.gradle",
+    "pom.xml",
     ".git",
     "mvnw",
-    "gradlew",
-    "pom.xml",
-    "build.gradle"
 }
 
 local root_dir = jdtls_setup.find_root(root_markers)

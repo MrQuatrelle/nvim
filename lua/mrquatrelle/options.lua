@@ -16,7 +16,7 @@ o.incsearch = true
 o.hlsearch = false
 o.ignorecase = true
 
-o.scrolloff = 5
+o.scrolloff = 10
 o.cursorline = true
 
 o.guicursor = "n-v-c-i-o:block"
