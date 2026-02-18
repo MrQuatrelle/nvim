@@ -9,6 +9,10 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set({ "n", "v" }, "<C-j>", "10jzz")
 keymap.set({ "n", "v" }, "<C-k>", "10kzz")
 
-keymap.set({"n"}, "<M-n>", ":Ex<CR>")
+keymap.set({ "n" }, "<M-n>", ":Ex<CR>")
 
-keymap.set({"i"}, "<C-BS>", "<C-w>")
+keymap.set({ "i" }, "<C-BS>", "<C-w>")
+
+keymap.set({ "t" }, "<Esc>", "<C-\\><C-n>")
+
+keymap.set({ "n" }, "<M-CR>", ":ToggleTerminal<CR>")
