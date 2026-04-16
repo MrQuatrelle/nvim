@@ -1,10 +1,11 @@
 return {
     {
         "nvim-treesitter/nvim-treesitter",
+        branch = "main",
+        lazy = false,
+        build = ":TSUpdate",
         config = function()
-            vim.cmd("TSUpdate")
-
-            require("nvim-treesitter.configs").setup {
+            require("nvim-treesitter").setup {
                 -- A list of parser names, or "all"
                 ensure_installed = { "c", "lua", "rust", "java", "cpp" },
 

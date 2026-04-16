@@ -1,5 +1,8 @@
 return {
     "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+
     config = function()
         if vim.g.neovide ~= nil then
             vim.g.neovide_normal_opacity = 0.8
@@ -30,6 +33,7 @@ return {
                 hl.ColorColumn = { bg = c.dark5 }
             end,
         })
+
         vim.cmd("colorscheme tokyonight")
     end
 }
